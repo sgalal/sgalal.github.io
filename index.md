@@ -53,13 +53,17 @@ math: |-
 ---
 
 :::{.my-header}
-![](index-photo.jpg){#avatar}&nbsp;&nbsp;
-
-# sgalal
-:::
-
-:::{.my-header2}
-_**Dedicated NLP Developer**_
+<table>
+<tbody>
+<tr>
+<td><img src="index-photo.jpg" id="avatar"/></td>
+<td style="padding-left: 1em; font-size: 120%;">
+<h1 id="sgalal">sgalal</h1>
+<p><em><strong>Dedicated NLP Developer</strong></em></p>
+</td>
+</tr>
+</tbody>
+</table>
 :::
 
 ---
