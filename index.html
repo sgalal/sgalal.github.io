@@ -79,18 +79,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-mono.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-roman.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nushu-script/font-unicode-nushu@1.0.0/index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&amp;display=swap" />
   <style>
-    :lang(zh) { font-family: 'Noto Serif CJK SC', serif, serif; }
-    :lang(zh-HK) { font-family: 'Noto Serif CJK KR', serif, serif; }
-    :lang(zh-Nshu) { font-family: 'Unicode Nushu', serif, serif; }
+    :lang(zh) { font-family: 'Noto Serif CJK SC', 'Noto Serif TC', serif, serif; }
+    :lang(zh-HK) { font-family: 'Noto Serif CJK KR', 'Noto Serif TC', serif, serif; }
+    :lang(zh-Nshu) { font-family: 'Unicode Nushu', serif, serif; font-size: 110%; }
+    a { text-decoration: none; }
     pre { font-family: 'Latin Modern Mono', monospace, monospace, monospace; line-height: 1; }
     body { font-family: 'Latin Modern Roman', system-ui, sans-serif, sans-serif; }
     #TOC, #title-block-header { display: none; }
     #avatar {
       border: 1px solid #777;
-      border-radius: 5em;
-      width: 8em;
-      max-width: 6em;
+      border-radius: 7em;
+      width: 11em;
+      max-width: 11em;
     }
     .my-header > * {
       vertical-align: middle;
@@ -106,6 +108,19 @@
     @media screen and (min-width: 1024px) {
       body { padding: 0 4em; }
     }
+    .abc > h2 {
+      margin-top: 0.5em;
+    }
+    /* Style 1 */
+    /* body { color: #2b2b2b; } */
+    /* Style 2 */
+    body { background-color: #a5e1ff; }
+    .abc {
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 1em;
+      background-color: #c9edff;
+    }
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -119,10 +134,30 @@
 <ul>
 <li><a href="#my-works">My Works</a>
 <ul>
-<li><a href="#cantonese">Cantonese</a></li>
-<li><a href="#nushu">Nushu</a></li>
-<li><a href="#chinese-characters">Chinese Characters</a></li>
-<li><a href="#middle-chinese">Middle Chinese</a></li>
+<li><a href="#cantonese-projects">Cantonese Projects</a>
+<ul>
+<li><a href="#what-is-cantonese">What is Cantonese?</a></li>
+<li><a href="#what-i-am-doing">What I am doing</a></li>
+<li><a href="#why-are-the-projects-important">Why are the projects important?</a></li>
+</ul></li>
+<li><a href="#nushu-projects">Nushu Projects</a>
+<ul>
+<li><a href="#what-is-nushu">What is Nushu?</a></li>
+<li><a href="#what-i-am-doing-1">What I am doing</a></li>
+<li><a href="#why-is-the-project-important">Why is the project important?</a></li>
+</ul></li>
+<li><a href="#variant-chinese-characters">Variant Chinese Characters</a>
+<ul>
+<li><a href="#what-are-variant-chinese-characters">What are variant Chinese characters?</a></li>
+<li><a href="#what-i-am-doing-2">What I am doing</a></li>
+<li><a href="#why-is-the-project-important-1">Why is the project important?</a></li>
+</ul></li>
+<li><a href="#middle-chinese-projects">Middle Chinese Projects</a>
+<ul>
+<li><a href="#what-is-middle-chinese">What is Middle Chinese?</a></li>
+<li><a href="#what-i-am-doing-3">What I am doing</a></li>
+<li><a href="#why-are-the-projects-important-1">Why are the projects important?</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#my-projects">My Projects</a>
 <ul>
@@ -143,28 +178,84 @@
 </div>
 <hr />
 <h1 id="my-works">My Works</h1>
-<h2 id="cantonese">Cantonese</h2>
+<section id="cantonese-projects" class="abc">
+<h2>Cantonese Projects</h2>
+<h3 id="what-is-cantonese">What is Cantonese?</h3>
+<p><a href="https://en.wikipedia.org/wiki/Cantonese">Cantonese</a> is a language within the Chinese language family (or a dialect of the Chinese language) spoken by over 80 million people as their mother language. It is viewed as a vital and inseparable part of the cultural identity for its native speakers across large swaths of <a href="https://en.wikipedia.org/wiki/Liangguang">Southeastern China</a>, Hong Kong and Macau, as well as in overseas communities.</p>
+<h3 id="what-i-am-doing">What I am doing</h3>
 <p>I am a developer in the Cantonese Computational Linguistics Infrastructure Development Workgroup (CanCLID).</p>
-<p>I have been developing the open-source projects <a href="https://github.com/rime/rime-cantonese">rime-cantonese</a> input method and <a href="https://github.com/CanCLID/ToJyutping">ToJyutping</a>.</p>
-<p>ToJyutping is a Python library for labeling Cantonese texts by the Cantonese pronunciation.</p>
-<h2 id="nushu">Nushu</h2>
-<p>I am the creator of The Nushu Coder’s Group on GitHub.</p>
-<p>Nushu (<span lang="zh-Nshu">𛆁𛈬</span>) is a mysterious script used exclusively among women in Jiangyong County of Southern China.</p>
-<p>I created the <a href="https://nushuscript.org/">Online Nushu Dictionary</a> website. The website is honored as “the Sacred Treasure for Nushu Translation” (<span lang="zh-Nshu">𛆁𛈬𛆌𛅰𛋙𛇬</span>) by Nushu researchers and learners.</p>
-<h2 id="chinese-characters">Chinese Characters</h2>
-<p><a href="https://github.com/BYVoid/OpenCC">Open Chinese Convert</a> (OpenCC) is one of the most popular open-source project for conversions between Traditional Chinese, Simplified Chinese and Japanese <em>Shinjitai</em>.</p>
-<p>As one of the maintainers, I am devoted in compiling the materials of variant Characters.</p>
-<h2 id="middle-chinese">Middle Chinese</h2>
-<p><a href="https://en.wikipedia.org/wiki/Middle_Chinese">Middle Chinese</a> (aka. the <em>Qieyun</em> System,<span lang="zh-HK">《切韻》音系</span>) is the ancient Chinese language recorded around 601 AD.</p>
-<p>I am the creator of the <a href="https://github.com/nk2028/qieyun-js">qieyun-js</a> project. It is a JavaScript library for the <em>Qieyun</em> system, which enables users to explore the system and derive modern Chinese dialects from the ancestral form.</p>
-<p>I am also a contributor of <a href="https://ytenx.org/">YonhTenxMyangx</a> (literally, rhyme dictionary website). The website collects several important ancient Chinese rhyme books.</p>
+<p>The projects I am working on include <a href="https://github.com/rime/rime-cantonese">rime-cantonese</a> input method, and <a href="https://github.com/CanCLID/ToJyutping">ToJyutping</a>, a Python library for labeling Cantonese texts by the Cantonese pronunciation.</p>
+<h3 id="why-are-the-projects-important">Why are the projects important?</h3>
+<p>The Cantonese input method is important in the following aspects:</p>
+<ul>
+<li>Let Cantonese speakers to type Chinese characters with minimum difficulty</li>
+<li>Help Cantonese learners to speak the language more accurately</li>
+<li>Promote the standardization of the written form of Cantonese</li>
+<li>Provide an audited dictionary for downstream NLP tasks</li>
+</ul>
+<p>ToJyutping is useful for Cantonese learners to learn the pronunciation of words.</p>
+</section>
+<section id="nushu-projects" class="abc">
+<h2>Nushu Projects</h2>
+<h3 id="what-is-nushu">What is Nushu?</h3>
+<p><a href="https://en.wikipedia.org/wiki/N%C3%BCshu">Nushu</a> (<span lang="zh-Nshu">𛆁𛈬</span>, literally “women’s script”) is a mysterious script used exclusively among women in Jiangyong County of Southern China. A Nushu character contains solely four kinds of strokes – dotted, vertical, oblique and arcuate. Nushu is written on cotton books as wedding gifts, which are called “third day missives”, or fans, handkerchiefs and papers, which has become a unique art symbol. Women in the local areas used to do the needlework together, reading, singing and teaching Nushu, forming a special Nushu culture.</p>
+<h3 id="what-i-am-doing-1">What I am doing</h3>
+<p>Nushu is popular because the shapes of Nushu characters are elegant. People can use them to decorate their artworks, such as calligraphy, clothes and handbags. However, it was difficult to find the correct Nushu characters in the past. Therefore, I created the <a href="https://nushuscript.org/">Online Nushu Dictionary</a> website for people to find, view and download Nushu characters freely.</p>
+<p>The website provides the Nushu converter, which can convert Chinese characters to its corresponding Nushu characters, and a Nushu input method. The website is a comprehensive dictionary for Nushu, which is honored as “the Sacred Treasure for Nushu Translation” (<span lang="zh-Nshu">𛆁𛈬𛆌𛅰𛋙𛇬</span>) by Nushu researchers and learners.</p>
+<h3 id="why-is-the-project-important">Why is the project important?</h3>
+<ul>
+<li>It is the first Nushu dictionary online, which is easily accessible for people around the world</li>
+<li>The website has been a useful reference for Nushu researchers and learners</li>
+<li>Nushu is widely used in the design of artworks and fashion products today. The website has been a reference for the designers</li>
+<li>Nushu is included in the Unicode character set. The website can be a reference for projects related to Unicode (such as computer fonts)</li>
+</ul>
+</section>
+<section id="variant-chinese-characters" class="abc">
+<h2>Variant Chinese Characters</h2>
+<h3 id="what-are-variant-chinese-characters">What are variant Chinese characters?</h3>
+<p><a href="https://en.wikipedia.org/wiki/Variant_Chinese_character">Variant Chinese characters</a> are Chinese characters that are homophones and synonyms. They exist both synchronically and diachronically within and across all regions where Chinese characters are used, whether they are used in Chinese (such as those countries or regions: mainland China, Hong Kong, Macau, Taiwan, Singapore, Malaysia), Japanese (Japan), or Korean (North Korea, South Korea).</p>
+<h3 id="what-i-am-doing-2">What I am doing</h3>
+<p>I am a maintainer of the <a href="https://github.com/BYVoid/OpenCC">Open Chinese Convert</a> (OpenCC) project. The project is one of the most popular open-source project for conversions between Traditional Chinese, Simplified Chinese and Japanese <em>Shinjitai</em>.</p>
+<p>My work mainly includes the following aspects:</p>
+<ul>
+<li>Gathering information about what variant Chinese characters are used in different administrative regions</li>
+<li>Determine the semantic relationship between a variant Chinese character in ancient time and its modern form</li>
+<li>Developing a converter of variant Chinese characters under the framework of <a href="https://en.wikipedia.org/wiki/Han_unification">Han unification</a> of Unicode</li>
+</ul>
+<h3 id="why-is-the-project-important-1">Why is the project important?</h3>
+<p>There is a great demand for the conversions between variant Chinese characters. The number of GitHub stars (around 5k) tells everything.</p>
+</section>
+<section id="middle-chinese-projects" class="abc">
+<h2>Middle Chinese Projects</h2>
+<h3 id="what-is-middle-chinese">What is Middle Chinese?</h3>
+<p><a href="https://en.wikipedia.org/wiki/Middle_Chinese">Middle Chinese</a> (aka. the <em>Qieyun</em> System,<span lang="zh-HK">《切韻》音系</span>) is the ancient Chinese language recorded around 601 AD and followed by several revised and expanded editions. It is the most important subject of the Historical Chinese phonology research.</p>
+<h3 id="what-i-am-doing-3">What I am doing</h3>
+<p>I am the sole creator of the <a href="https://github.com/nk2028/qieyun-js">qieyun-js</a> project. It is a JavaScript library for software development based on the <em>Qieyun</em> system.</p>
+<p>I am also a contributor of <a href="https://ytenx.org/">YonhTenxMyangx</a> (literally “rhyme dictionary website”), which is a website that collects several important ancient Chinese rhyme books.</p>
+<h3 id="why-are-the-projects-important-1">Why are the projects important?</h3>
+<ul>
+<li>Enable users to explore the <em>Qieyun</em> system</li>
+<li>Make it possible to derive modern Chinese dialects from the ancestral form</li>
+<li>Inherit and develop the ancient Chinese culture</li>
+<li>Provide the infrastructure for the modern Historical Chinese phonology research</li>
+</ul>
+</section>
 <h1 id="my-projects">My Projects</h1>
-<h2 id="knights-tour-visualization">Knight’s Tour Visualization</h2>
+<section id="knights-tour-visualization" class="abc">
+<h2>Knight’s Tour Visualization</h2>
+<p>The project was completed during my sophomore.</p>
 <p><a href="https://sgalal.github.io/knights-tour-visualization/">Knight’s Tour Visualization</a> is an online Knight’s tour visualizer, implemented in C and then compiled to JavaScript by Emscripten.</p>
-<h2 id="oslab">oslab</h2>
+<p><img src="https://raw.githubusercontent.com/sgalal/knights-tour-visualization/master/demo/demo.gif" style="max-width: 400px" /></p>
+</section>
+<section id="oslab" class="abc">
+<h2>oslab</h2>
+<p>The project was completed during my sophomore.</p>
 <p><a href="https://sgalal.github.io/oslab/">oslab</a> contains my experiments of the Operating System course. The experiments are done by multiple programming languages with different programming paradigms.</p>
-<h2 id="tinype-on-windows-10">TinyPE on Windows 10</h2>
-<p><a href="https://github.com/sgalal/TinyPE-on-Win10">TinyPE on Windows 10</a> is possibly the minimal 64-bit <a href="https://en.wikipedia.org/wiki/Portable_Executable">Portable Executable</a> (PE) file that displays a message box on Windows 10.</p>
+</section>
+<section id="tinype-on-windows-10" class="abc">
+<h2>TinyPE on Windows 10</h2>
+<p>The project was completed during my junior.</p>
+<p><a href="https://github.com/sgalal/TinyPE-on-Win10">TinyPE on Windows 10</a> is possibly the minimal 64-bit <a href="https://en.wikipedia.org/wiki/Portable_Executable">Portable Executable</a> (PE) file that displays a message box on Windows 10. It is related to cyber security.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>$ <span class="ex">xxd</span> stretch.exe</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">00000000</span>: 4d5a 0000 5045 0000 6486 0100 4d65 7373  MZ..PE..d...Mess</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">00000010</span>: 6167 6542 6f78 5700 8000 2200 0b02 0000  ageBoxW...<span class="st">&quot;.....</span></span>
@@ -183,11 +274,18 @@
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="ex">000000e0</span>: 6900 6e00 6400 6f00 7700 7300 2000 3100  i.n.d.o.w.s. .1.</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="ex">000000f0</span>: 3000 0000 0801 0000 0000 0000 31c9 eb9e  0...........1...</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="ex">00000100</span>: 7c00 0000 9400 0000 0a00 0000            <span class="kw">|</span><span class="ex">...........</span></span></code></pre></div>
-<h2 id="rensyuugi">Rensyuugi</h2>
+<p><img src="https://raw.githubusercontent.com/sgalal/TinyPE-on-Win10/master/index.files/tiny1.exe.png" /></p>
+</section>
+<section id="rensyuugi" class="abc">
+<h2>Rensyuugi</h2>
+<p>The project was completed during my junior.</p>
 <p><a href="https://sgalal.github.io/rensyuugi/">Rensyuugi</a> is an online CJK word-reciting tool. Currently it supports <a href="https://en.wikipedia.org/wiki/Kanji#Kun&#39;yomi_(native_reading)"><em>Kun’yomi</em></a>, <a href="https://en.wikipedia.org/wiki/Sino-Korean_vocabulary">Hanja-eo</a> and <a href="https://en.wikipedia.org/wiki/Cantonese">Cantonese</a>.</p>
-<h2 id="other-projects">Other Projects</h2>
-<p>Checkout my other projects on <a href="https://github.com/sgalal">GitHub</a>!</p>
+</section>
+<section id="other-projects" class="abc">
+<h2>Other Projects</h2>
+<p>If you are interested in my other projects, please visit my <a href="https://github.com/sgalal">GitHub</a>.</p>
+</section>
 <hr />
-<footer><p>Last modified: <span lang="en-CN" xml:lang="en-CN">2020-08-27 13:51:47 UTC+0800 - Built with pandoc 2.10.1</span></p></footer>
+<footer><p>Last modified: <span lang="en-CN" xml:lang="en-CN">2020-08-31 10:04:35 UTC+0800 - Built with pandoc 2.10.1</span></p></footer>
 </body>
 </html>
