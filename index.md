@@ -4,87 +4,39 @@ lang: en-UK
 dir: ltr
 css:
   - https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-mono.css
-  - https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-roman.css
-  - https://cdn.jsdelivr.net/gh/nushu-script/font-unicode-nushu@1.0.0/index.css
-  - https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap
-math: |-
-  <style>
-    :lang(zh) { font-family: 'Noto Serif CJK SC', 'Noto Serif TC', serif, serif; }
-    :lang(zh-HK) { font-family: 'Noto Serif CJK KR', 'Noto Serif TC', serif, serif; }
-    :lang(zh-Nshu) { font-family: 'Unicode Nushu', serif, serif; font-size: 110%; }
-    a { text-decoration: none; }
-    pre { font-family: 'Latin Modern Mono', monospace, monospace, monospace; line-height: 1; }
-    body { font-family: 'Latin Modern Roman', system-ui, sans-serif, sans-serif; }
-    #TOC, #title-block-header { display: none; }
-    #avatar {
-      border: 1px solid #777;
-      border-radius: 7em;
-      width: 11em;
-      max-width: 11em;
-    }
-    .my-header > * {
-      vertical-align: middle;
-      display: inline-block;
-    }
-    .my-header > h1 {
-      font-size: 2.5em;
-      margin-top: 0;
-      line-height: 1.2;
-    }
-    .my-header2 > p { margin-top: 0; font-size: 105%; }
-    body { margin: 0 auto; padding: 0 1em; }
-    @media screen and (min-width: 1024px) {
-      body { padding: 0 4em; }
-    }
-    .abc > h2 {
-      margin-top: 0.5em;
-    }
-    /* Style 1 */
-    /* body { color: #2b2b2b; } */
-    /* Style 2 */
-    body { background-color: #a5e1ff; }
-    .abc {
-      padding: 1em;
-      margin: 1em 0;
-      border-radius: 1em;
-      background-color: #c9edff;
-    }
-    .red{color:red;}
-  </style>
+  - https://cdn.jsdelivr.net/gh/nushu-script/NotoTraditionalNushu@woff-v1.0/index.css
+  - https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap
+  - https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400;1,700&display=swap
+  - index.css
 ---
 
 :::{.my-header}
-<table>
-<tbody>
-<tr>
-<td style="padding-top: 1em; padding-bottom: 0.5em;">
-  <img src="index-photo.jpg" id="avatar"/>
-</td>
-<td style="padding-left: 1em; font-size: 120%;">
-  <h1 id="sgalal">sgalal</h1>
-  <p style="margin-top: 0.5em;"><em><strong>Dedicated NLP Developer</strong></em></p>
-</td>
-</tr>
-</tbody>
-</table>
+
+<img src="index-photo.jpg" id="avatar"/>
+
+<h1 id="sgalal">sgalal</h1>
+
+<p style="margin-top: 0.5em;"><em><strong>Dedicated NLP Developer</strong></em></p>
+
 :::
 
----
+:::::{.main-div}
 
 # My Works
 
 :::{.red}
+
 **Currently I am working on a new project ([pinyin2hanzi](https://github.com/sgalal/pinyin2hanzi)) to convert Chinese romanisation (pinyin) to Chinese characters (hanzi). In the process of this project, I have improved my ability of language modeling and NLP skills.**
 
 **This is an NLP-related project. It involves knowledge of Linguistics, natural language processing, web scraping and deep learning.**
+
 :::
 
-:::{.abc}
 ## Cantonese Projects
 
 ### What is Cantonese?
 
-[Cantonese](https://en.wikipedia.org/wiki/Cantonese) is a language within the Chinese language family (or a dialect of the Chinese language) spoken by over 80 million people as their mother language. It is viewed as a vital and inseparable part of the cultural identity for its native speakers across large swaths of [Southeastern China](https://en.wikipedia.org/wiki/Liangguang), Hong Kong and Macau, as well as in overseas communities.
+[Cantonese](https://en.wikipedia.org/wiki/Cantonese) is a language within the Chinese language family (a dialect of the Chinese language) spoken by over 80 million people as their mother language. It is viewed as a vital and inseparable part of the cultural identity for its native speakers across large swaths of [Southeastern China](https://en.wikipedia.org/wiki/Liangguang), Hong Kong and Macau, as well as in overseas communities.
 
 ### What I am doing
 
@@ -102,9 +54,7 @@ The Cantonese input method is important in the following aspects:
 - Provide an audited dictionary for downstream NLP tasks
 
 ToJyutping is useful for Cantonese learners to learn the pronunciation of words.
-:::
 
-:::{.abc}
 ## Nushu Projects
 
 ### What is Nushu?
@@ -123,9 +73,7 @@ The website provides the Nushu converter, which can convert Chinese characters t
 - The website has been a useful reference for Nushu researchers and learners
 - Nushu is widely used in the design of artworks and fashion products today. The website has been a reference for the designers
 - Nushu is included in the Unicode character set. The website can be a reference for projects related to Unicode (such as computer fonts)
-:::
 
-:::{.abc}
 ## Variant Chinese Characters
 
 ### What are variant Chinese characters?
@@ -145,9 +93,7 @@ My work mainly includes the following aspects:
 ### Why is the project important?
 
 There is a great demand for the conversions between variant Chinese characters. The number of GitHub stars (around 5k) tells everything.
-:::
 
-:::{.abc}
 ## Middle Chinese Projects
 
 ### What is Middle Chinese?
@@ -166,11 +112,9 @@ I am also a contributor of [YonhTenxMyangx](https://ytenx.org/) (literally "rhym
 - Make it possible to derive modern Chinese dialects from the ancestral form
 - Inherit and develop the ancient Chinese culture
 - Provide the infrastructure for the modern Historical Chinese phonology research
-:::
 
 # My Projects
 
-:::{.abc}
 ## Knight's Tour Visualization
 
 The project was completed during my sophomore.
@@ -178,17 +122,13 @@ The project was completed during my sophomore.
 [Knight's Tour Visualization](https://sgalal.github.io/knights-tour-visualization/) is an online Knight's tour visualizer, implemented in C and then compiled to JavaScript by Emscripten.
 
 ![](https://raw.githubusercontent.com/sgalal/knights-tour-visualization/master/demo/demo.gif){style="max-width: 400px"}
-:::
 
-:::{.abc}
 ## oslab
 
 The project was completed during my sophomore.
 
 [oslab](https://sgalal.github.io/oslab/) contains my experiments of the Operating System course. The experiments are done by multiple programming languages with different programming paradigms.
-:::
 
-:::{.abc}
 ## TinyPE on Windows 10
 
 The project was completed during my junior.
@@ -217,20 +157,15 @@ $ xxd stretch.exe
 ```
 
 ![](https://raw.githubusercontent.com/sgalal/TinyPE-on-Win10/master/index.files/tiny1.exe.png)
-:::
 
-:::{.abc}
 ## Rensyuugi
 
 The project was completed during my junior.
 
 [Rensyuugi](https://sgalal.github.io/rensyuugi/) is an online CJK word-reciting tool. Currently it supports [_Kun'yomi_](https://en.wikipedia.org/wiki/Kanji#Kun'yomi_(native_reading)), [Hanja-eo](https://en.wikipedia.org/wiki/Sino-Korean_vocabulary) and [Cantonese](https://en.wikipedia.org/wiki/Cantonese).
-:::
 
-:::{.abc}
 ## Other Projects
 
 If you are interested in my other projects, please visit my [GitHub](https://github.com/sgalal).
-:::
 
----
+:::::

@@ -1,0 +1,52 @@
+/* Global fonts */
+
+:lang(zh), :lang(zh-HK) { font-family: sans-serif, serif, serif; }
+:lang(zh-Nshu) { font-family: 'Noto Traditional Nushu', sans-serif, sans-serif; }
+h1, h2, h3, h4 { font-family: 'Open Sans', sans-serif, sans-serif; }
+pre { font-family: 'Latin Modern Mono', monospace, monospace, monospace; }
+body { font-family: 'Montserrat', system-ui, sans-serif, sans-serif; }
+footer { font-family: sans-serif; }
+
+/* Global styles */
+
+a { text-decoration: none; }
+pre { line-height: 1.2; }
+#TOC, #title-block-header { display: none; }
+footer { color: #333; font-size: 90%; margin: 1.5em 0; text-align: center; }
+body { font-size: 105%; margin: 0 auto; padding: 0; line-height: 1.6; }
+
+/* .my-header styles */
+
+.my-header {
+	background: #222;
+	color: #eee;
+	text-align: center;
+	padding: 1em 0;
+	font-family: 'Montserrat', system-ui, sans-serif, sans-serif;
+	font-size: 120%;
+}
+
+.my-header img {
+	border: 1px solid #777;
+	border-radius: 7rem;
+	width: 11rem;
+	max-width: 11rem;
+}
+
+.my-header p, .my-header h1 {
+	margin: 0;
+}
+
+/* Page styles */
+
+.main-div {
+	margin: 0 auto;
+	max-width: 55em;
+	padding: 0 1em;
+}
+
+.abc { padding: 0; }
+
+.red p {
+	font-family: 'Open Sans', sans-serif, sans-serif;
+}
