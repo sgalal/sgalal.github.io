@@ -9,6 +9,7 @@ footer { font-family: sans-serif; }
 
 /* Global styles */
 
+html { background-color: #fcfaf2; }
 a { text-decoration: none; }
 pre { line-height: 1.2; }
 #TOC, #title-block-header { display: none; }
@@ -18,11 +19,12 @@ body { font-size: 105%; margin: 0 auto; padding: 0; line-height: 1.6; }
 /* .my-header styles */
 
 .my-header {
-	background: #222;
-	color: #eee;
+	background-color: #fff;
+	color: #111;
 	text-align: center;
 	padding: 1em 0;
 	font-family: 'Montserrat', system-ui, sans-serif, sans-serif;
+	box-shadow: 0 0 4px gray;
 	font-size: 120%;
 }
 

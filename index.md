@@ -26,7 +26,7 @@ css:
 
 :::{.red}
 
-**Currently I am working on a new project ([pinyin2hanzi](https://github.com/sgalal/pinyin2hanzi)) to convert Chinese romanisation (pinyin) to Chinese characters (hanzi). In the process of this project, I have improved my ability of language modeling and NLP skills.**
+**Update: Currently I am working on a new project ([pinyin2hanzi](https://github.com/sgalal/pinyin2hanzi)) to convert Chinese romanisation (pinyin) to Chinese characters (hanzi). In the process of this project, I have improved my ability of language modeling and NLP skills.**
 
 **This is an NLP-related project. It involves knowledge of Linguistics, natural language processing, web scraping and deep learning.**
 
