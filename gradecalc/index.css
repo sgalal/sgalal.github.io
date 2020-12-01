@@ -1,0 +1,41 @@
+body {
+	line-height: 1.5;
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+#resultWrapper {
+	background-color: white;
+	text-align: left;
+	border: 1px solid;
+	padding: 1em;
+	width: 20em;
+}
+
+table {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+tr > :first-child {
+	text-align: left;
+	max-width: 30em;
+}
+
+.ui-dialog .ui-dialog-title {
+	text-align: left;
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+
+[type=checkbox][disabled] {
+	filter: alpha(opacity=50);  /* For IE < 9 */
+	filter: invert(25%);
+	opacity: .5;
+}
